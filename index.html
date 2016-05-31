@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Angular 2 QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/geo.css" media="all" />
+    <!--Old Map Explorer Javascripts -->
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/default.css" media="all" />-->
+    <!--<link href="../../favicon.ico?v=2" rel="icon" type="image/x-icon" />-->
+    <!--<script type="text/javascript" src="assets/js/jquery-1.8.3.js"></script>-->
+    <script src="assets/js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="assets/js/queue.v1.min.js"></script>
+    <script src="assets/js/topojson.v1.min.js"></script>
+    <!--<script src="assets/js/jquery-ui.js"></script>-->
+
+    <!--<script src="assets/js/moment.min.js"></script> 
+    <script src="assets/js/daterangepicker.js"></script> 
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">-->
+  
+
+    <!--<script type="text/javascript" src="assets/js/default.js"></script>-->
+  
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+       System.config({ 
+         packages: {'app': {defaultExtension: 'js'} },
+          map: {
+          "angular2-jwt": "node_modules/angular2-jwt/angular2-jwt.js",
+           "d3": "node_modules/d3/d3.js",
+          //  "queue": "node_modules/queue/index.js"
+         } 
+       
+        });
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <my-app>Loadings...</my-app>
+  </body>
+</html>

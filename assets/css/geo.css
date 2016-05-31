@@ -1,0 +1,133 @@
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+#map_data {
+  /*stroke: #000;*/
+  /*stroke-width: 0.2px;*/
+}
+
+.map-borders {
+  fill: #EBEBEB;
+  stroke: #CCC;
+  stroke-width: 0.1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.map-borders .active {
+  /*fill: green !important;*/
+  stroke: #33D1E3 !important;
+  stroke-width: 1px !important;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.state-borders {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.3px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+#mytooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  background: #F6362B;
+  border: 2px white solid;
+  color: white;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.legendData {
+	font-size: 13px;
+  font-family: 'sans-serif' !important;
+  /*fill: #F7464A;*/
+}
+
+#zoomer {
+  text-align: center;
+  position: absolute;
+  text-decoration: none;
+  font-size: 13px;
+  color: #FFF;
+  padding: 2px 5px 2px 5px;
+  background: #000;
+  border: 2px #000 solid;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 753px;
+}
+
+#mapTogglerDiv {
+  text-align: center;
+  position: absolute;
+  margin-top: 10px;
+}
+
+#mapTogglerDiv button {
+  font-size: 13px;
+  /*border-radius: 8px;*/
+  margin-left: 23px;
+  width: 130px !important;
+}
+
+
+#histogram {
+  height: 140px;
+  width: 705px;
+  
+  background-color: #F9F9F9;
+
+  overflow: hidden;
+/*
+  -moz-box-shadow: 4px 4px 14px #000; 
+  -webkit-box-shadow: 4px 4px 14px #000; 
+  box-shadow: 4px 4px 14px #000; 
+
+  -moz-transform:rotate(20deg);
+  -webkit-transform:rotate(20deg);
+  -o-transform:rotate(20deg);
+  -ms-transform:rotate(20deg);
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+  */
+}
+
+svg {
+  border-radius: 10px;
+  border: 1px solid rgb(218,218,218);
+  background-color: #F9F9F9;
+  padding: 1px;
+}
+
+
+.map_key_toggle:hover {
+  cursor: pointer;
+}
+
+.map_key_toggle {
+  opacity: 0.3;
+  fill: #aaa;
+  stroke-width: 0px;
+  position: absolute;
+  left: 10px;
+  top: 152px;
+  width: 255px;
+  height: 16px;
+}
+
+.map_key_toggle_switch_shaded {
+  fill: #aaa;
+  cursor: pointer;
+}
+
+.legend {
+  font-family: 'Calibri' !important;
+  font-size: 14px;
+}

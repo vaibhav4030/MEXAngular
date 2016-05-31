@@ -1,0 +1,70 @@
+<style>
+body {
+  background-color:#fff;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Verdana,sans-serif;
+}
+.container {
+    padding: 20px;
+    width: 480px;
+    text-align: center;
+}
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+</style>
+
+<div class="container">
+    <div class="row">
+        <div >
+            <div class="form-login">
+               
+                <form (ngSubmit)="onSubmit(login)" #login="ngForm">
+                    <fieldset>
+                    <!-- Form Name -->
+                    <legend>Welcome Back</legend>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinput">Username</label>  
+                        <div class="col-md-8">
+                        <input class="form-control input-md" required type="text" [(ngModel)]="login.username" ngControl="username"  #username="ngForm" >
+                        <!--<span class="help-block">Enter Your Username</span>  -->
+                        <div [hidden]="username.valid || username.pristine" class="alert alert-danger">
+                                Username is required
+                        </div>
+                        </div>
+                    </div>
+                    <div class="clearfix help-block" ></div>
+                    <!-- Password input-->
+                    <div class="form-group">
+                    <label class="col-md-4 control-label" for="passwordinput">Password</label>
+                    <div class="col-md-8">
+                        <input class="form-control input-md" required type="password" [(ngModel)]="login.password" ngControl="password"  #password="ngForm">
+                        <!--<span class="help-block">Entyer Your Password</span>-->
+                        <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+                                Password is required
+                        </div>
+                    </div>
+                    </div>
+                    <div class="clearfix help-block" ></div>
+                    <!-- Submit -->
+                    <div class="form-group">
+                    <label class="col-md-4 control-label" for="singlebutton"></label>
+                    <div class="col-md-8">
+                        <button id="singlebutton" type="submit" name="singlebutton" class="btn btn-primary" [disabled]="!login.form.valid">Login</button>
+                    </div>
+                    </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

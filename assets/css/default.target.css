@@ -1,0 +1,22 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	background-color: #F9F9F9;
+}
+ .text-holder {
+ 	position: absolute;
+ 	vertical-align: middle;
+ 	font-family: 'Calibri' !important;
+	line-height: 1.0;
+	padding-left: 10px;
+ }
+ .text-holder-focus {
+ 	font-size: 33px;
+ }
+ .text-holder-focus-percent {
+ 	font-size: 17px;
+ }
+ .text-holder-focus-label {
+ 	font-size: 14px;
+ }

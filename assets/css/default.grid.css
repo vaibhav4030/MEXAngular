@@ -1,0 +1,18 @@
+body {
+	padding:10px;  
+	font-family: 'Calibri', 'Verdana', 'Helvetica', 'Arial', 'sans-serif';
+  	text-align: center;
+}
+.customTbl {
+/*	color: #290101;
+	border-bottom: 2px #BD362F groove;*/
+}
+.customTbl > thead,
+.customTbl > tbody,
+.customTbl > thead > tr,
+.customTbl > tbody > tr,
+.customTbl > thead > tr > th,
+.customTbl > tbody > tr > td {
+    font-family: 'Calibri', 'Verdana', 'Helvetica', 'Arial', 'sans-serif';
+    font-size:14px;
+}

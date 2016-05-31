@@ -1,0 +1,78 @@
+html, body, div {
+  background-color: #F9F9F9;
+}
+
+svg {
+  font-family: 'Calibri',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  background-color: #F9F9F9;
+}
+
+circle {
+  -webkit-transition: fill-opacity 250ms linear;
+}
+
+.selecting circle {
+  fill-opacity: .2;
+  fill: rgb(67, 192, 204);
+  shape-rendering: optimizeSpeed;
+}
+
+.selecting circle.selected {
+  fill-opacity: .5;
+  fill: rgb(246, 54, 43);
+  shape-rendering: optimizeSpeed;
+}
+
+.resize path {
+  fill: #666;
+  fill-opacity: .8;
+  stroke: #000;
+  /*stroke-width: 1px;*/
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: geometricPrecision;
+}
+
+.brush .extent {
+  fill-opacity: .125;
+  shape-rendering: geometricPrecision;
+}
+
+.brush {
+/*stroke: #000;
+stroke-width: 2px;*/
+/*stroke:black;
+stroke-width:5px;
+stroke-opacity:0.5;
+stroke-linejoin:round;
+stroke-linecap:round;*/
+/*fill-opacity: .9;
+fill: rgb(180,180,180);
+stroke: #000; 
+stroke-width: 1px;*/
+}
+
+.brush_handle {
+	fill-opacity: .5;
+	shape-rendering: geometricPrecision;
+	/*shape-rendering: crispEdges;*/
+	/*fill: #000;*/
+	/* stroke: rgb(225,225,225); */
+	/*stroke-width: 0px;*/
+}
+
+.btn-group {
+  /*text-align: center;*/
+  /*margin-top: -7px;*/
+  padding-left: 150px;
+  /*padding-left: 317px;*/
+}
+
+.labelTxt {
+  margin-top: -7px;
+  padding-left: 20px;
+}
